@@ -170,7 +170,7 @@ function GUI.makeslider(parent, position, size, corners, minValue, maxValue, cal
 	local percent = 0
 	local value = minValue
 
-	local function setSliderValue(p)
+	function setSliderValue(p)
 		p = math.clamp(p, 0, 1)
 		percent = p
 		value = minValue + (maxValue - minValue) * percent
